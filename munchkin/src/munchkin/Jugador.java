@@ -5,11 +5,12 @@ import java.util.Random;
 
 public class Jugador {
 	
-	private String nombre;
-	private int nivel;
-	private ArrayList<Tesoro> tesoros;
+	// Atributos
+	protected String nombre;
+	protected int nivel;
+	protected ArrayList<Tesoro> tesoros;
 	
-	
+	// Constructores
 	public Jugador(String nombre) {
 		this.nombre = nombre;
 		this.nivel = 1;
@@ -23,7 +24,8 @@ public class Jugador {
 		this.tesoros = new ArrayList<Tesoro>();
 	}
 
-
+	// Getter & Setter
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -52,7 +54,8 @@ public class Jugador {
 	public void setTesoros(ArrayList<Tesoro> tesoros) {
 		this.tesoros = tesoros;
 	}
-	
+
+	// Metodos
 	public int getFuerza() {
 		// TODO integrar Juego para llamar a aplicarEfecto
 		int bonus = 0;
